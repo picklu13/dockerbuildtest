@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+  build_machine_test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: build_machine_test
+    volumes:
+      - ~/dockerbuildtest/:/app/
+    tty: true
